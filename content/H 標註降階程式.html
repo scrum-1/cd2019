@@ -147,25 +147,30 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">參數設計與繪圖 << <a href='參數設計與繪圖.html'>Previous</a> <a href='V-rep 動態模擬.html'>Next</a> >> V-rep 動態模擬<br /><h1>細部設計與 BOM</h1>
-<p>完成手足球零組件細部設計 (可參考 <a href="https://youtu.be/PgnvZV5s13c">https://youtu.be/PgnvZV5s13c</a> 中各項設計), 並將設計 BOM (Bill of Materials) 納入 CMSimfly 網際內容管理系統. (系統 BOM 文件整理)</p>
-<p>手足球 DIY 影片:</p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="315" src="https://www.youtube.com/embed/PgnvZV5s13c" width="560"></iframe></p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="315" src="https://www.youtube.com/embed/DLchkFqzTNA" width="560"></iframe></p>
-<h4>參考資料:</h4>
-<p><a href="https://www.matterhackers.com/articles/how-to-build-a-foosball-table">https://www.matterhackers.com/articles/how-to-build-a-foosball-table</a></p>
-<p><a href="https://www.matterhackers.com/store/digital-designs/foosball-table-parts">https://www.matterhackers.com/store/digital-designs/foosball-table-parts</a></p>
-<h4>手足球零件格式說明</h4>
-<p>手足球零件格式說明</p>
-<h4>零件 BOM</h4>
-<p>手足球零組件材料表 (含零組件下載連結)</p>
-<h4>零件尺寸圖</h4>
-<p>零件尺寸圖</p>
-<h4>零件部分組裝圖</h4>
-<p>零件部分組裝圖</p>
-<h4>3D 零組件爆炸圖</h4>
-<p>3D 零組件爆炸圖</p>
-<br />參數設計與繪圖 << <a href='參數設計與繪圖.html'>Previous</a> <a href='V-rep 動態模擬.html'>Next</a> >> V-rep 動態模擬</div>
+    <div id="tipue_search_content">各組期末報告說明 << <a href='各組期末報告說明.html'>Previous</a> <a href='期末協同專案 Q&A.html'>Next</a> >> 期末協同專案 Q&A<br /><h1>H 標註降階程式</h1>
+<p>當 CMSimfly 管理者需要利用程式關鍵字代換的功能, 將各 H 標註標題頁面降階次時, 可以使用下列程式:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import re
+
+# 打開檔案取內容
+with open('config/content.htm', 'r', encoding="utf-8") as f:
+    content = f.read()
+
+rep = {"h1": "h2", "h2": "h3", "h3": "h4"} # define desired replacements here
+
+# use these three lines to do the replacement
+# re.escape(k) 在 k 字串中的特殊符號前加上反斜線
+# rep.items() returns a list of rep dict's (key, value) tuple pairs
+rep = dict((re.escape(k), v) for k, v in rep.items())
+pattern = re.compile("|".join(rep.keys()))
+#text = pattern.sub(lambda m: rep[re.escape(m.group(0))], text)
+output = pattern.sub(lambda m: rep[re.escape(m.group(0))], content)
+# 將 output 前置一頁 h1 後存入 content.htm
+output = "&lt;h1&gt;期中報告&lt;/h1&gt;" + output
+with open('config/content.htm', 'w', encoding="utf-8") as f:
+    f.write(output)</pre>
+<p>至於關鍵字替換升階時則需注意原頁面中已經使用 H4 作為段落標題之內容, 是否已經與先前降階之 H3 標註混合在文章內容中, 此時若選擇將所有 H4 標註升為 H3, 這些原先在內容中的 H4 標註將會被提升為分頁 H3 的標題.</p>
+<p>對於在專案中需要進行多次升階與降階的內容, 建立在頁面標題降階之前, 保存各原先頁面標題內容與階次, 待需要升降頁面階次時, 可以用來篩選從 H4 升為 H3 流程時的參考.</p>
+<br />各組期末報告說明 << <a href='各組期末報告說明.html'>Previous</a> <a href='期末協同專案 Q&A.html'>Next</a> >> 期末協同專案 Q&A</div>
         
     <!-- footer -->
       <div class="container">
