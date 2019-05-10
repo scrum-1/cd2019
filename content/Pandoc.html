@@ -147,25 +147,15 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">參數設計與繪圖 << <a href='參數設計與繪圖.html'>Previous</a> <a href='V-rep 動態模擬.html'>Next</a> >> V-rep 動態模擬<br /><h1>細部設計與 BOM</h1>
-<p>完成手足球零組件細部設計 (可參考 <a href="https://youtu.be/PgnvZV5s13c">https://youtu.be/PgnvZV5s13c</a> 中各項設計), 並將設計 BOM (Bill of Materials) 納入 CMSimfly 網際內容管理系統. (系統 BOM 文件整理)</p>
-<p>手足球 DIY 影片:</p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="315" src="https://www.youtube.com/embed/PgnvZV5s13c" width="560"></iframe></p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="315" src="https://www.youtube.com/embed/DLchkFqzTNA" width="560"></iframe></p>
-<h4>參考資料:</h4>
-<p><a href="https://www.matterhackers.com/articles/how-to-build-a-foosball-table">https://www.matterhackers.com/articles/how-to-build-a-foosball-table</a></p>
-<p><a href="https://www.matterhackers.com/store/digital-designs/foosball-table-parts">https://www.matterhackers.com/store/digital-designs/foosball-table-parts</a></p>
-<h4>手足球零件格式說明</h4>
-<p>手足球零件格式說明</p>
-<h4>零件 BOM</h4>
-<p>手足球零組件材料表 (含零組件下載連結)</p>
-<h4>零件尺寸圖</h4>
-<p>零件尺寸圖</p>
-<h4>零件部分組裝圖</h4>
-<p>零件部分組裝圖</p>
-<h4>3D 零組件爆炸圖</h4>
-<p>3D 零組件爆炸圖</p>
-<br />參數設計與繪圖 << <a href='參數設計與繪圖.html'>Previous</a> <a href='V-rep 動態模擬.html'>Next</a> >> V-rep 動態模擬</div>
+    <div id="tipue_search_content">專案報告書 << <a href='專案報告書.html'>Previous</a> <a href='TinyTeX.html'>Next</a> >> TinyTeX<br /><h1>Pandoc</h1>
+<p><a href="https://pandoc.org/">https://pandoc.org/</a></p>
+<p>使用</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">pandoc content.htm  --toc -t latex -V "CJKmainfont:SimSun" -V fontsize=12pt -V geometry:margin=1in --pdf-engine=xelatex -o content.pdf</pre>
+<p>可以將帶有中文字元的 content.htm 轉為 content.pdf, 但是以協同方式較不容易編輯管理 contet.htm, 因此若能先設法以 Pandoc 指令:</p>
+<pre class="brush:js;toolbar:false" contenteditable="false">pandoc content.htm -t markdown -o content.md</pre>
+<p>將 content.htm 轉為 conten.md, 之後再以協同方式編輯管理此一 conten.md 檔案,  以便使用:</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">pandoc content.md --toc -V "CJKmainfont:SimSun" -V fontsize=12pt -V geometry:margin=1in --pdf-engine=xelatex -o content.pdf</pre>
+<p>將 content.md 轉為最後出版的 pdf 格式結案報告.</p><br />專案報告書 << <a href='專案報告書.html'>Previous</a> <a href='TinyTeX.html'>Next</a> >> TinyTeX</div>
         
     <!-- footer -->
       <div class="container">
