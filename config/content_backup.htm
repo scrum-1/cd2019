@@ -116,6 +116,8 @@ with open('config/content.htm', 'w', encoding="utf-8") as f:
 <h4>3D 零組件爆炸圖</h4>
 <p>3D 零組件爆炸圖</p>
 <h1>V-rep 動態模擬</h1>
+<p>建立模擬檔案時, 必須注意所使用的 V-rep 版本, 因為官網最近改版頻繁, 目前已推出 3.6.1 rev 3, 使用舊版可能無法開啟新版所建立的模型檔案. 因此模型檔案連結應該要註明所使用的 V-rep 版本.</p>
+<p><a href="http://www.coppeliarobotics.com/downloads.html">http://www.coppeliarobotics.com/downloads.html</a></p>
 <p>手足球系統中各球員擊球與操控桿移動旋轉的 V-rep 動態模擬 (系統功能模擬)</p>
 <p>以文字及操作影片說明如何從 Onshape 設計繪製零組件後, 如何轉入 V-rep, 如何編寫程式, 如何進行各種功能測試, 最後完成手足球的 V-rep 動態模擬系統.</p>
 <p>V-rep Scripts 相關資料:</p>
@@ -144,7 +146,24 @@ with open('config/content.htm', 'w', encoding="utf-8") as f:
 <p>V-rep 場景檔案: <a href="https://github.com/mdecourse/cd2019/blob/gh-pages/downloads/foosball_solvespace_vrep/kmol_foosball_w9.ttt">https://github.com/mdecourse/cd2019/blob/gh-pages/downloads/foosball_solvespace_vrep/kmol_foosball_w9.ttt</a></p>
 <p>以 V-rep 3.6.1 以上版本開啟檔案後執行, 鍵盤 a 與 d 鍵控制左右平移, w 與 s 鍵控制旋轉.</p>
 <h1>結案報告</h1>
-<h2>專案口頭簡報</h2>
+<p>假如希望利用 CMSimfly 中既有的 config/content.htm 或 content 目錄中的檔案, 整理出 pdf 格式的報告, 可以使用 Pandoc 與  TinyTeX 設法以程式方法進行轉檔.</p>
+<p>構想:</p>
+<p>假如能夠將 content.htm 先轉為 content.md, 然後就 content.md 中可能出現的內容進行協同轉檔編輯測試, 找出各種資料在轉檔過程中可能碰到的問題, 並加以解決後, 將可以使用類似</p>
+<p><a href="https://github.com/matlipson/phd_thesis_markdown">https://github.com/matlipson/phd_thesis_markdown</a></p>
+<p>的流程, 產生最終 pdf 格式的結案報告.</p>
+<h4>參考資料:</h4>
+<p><a href="https://www.theurbanist.com.au/2018/02/writing-a-thesis-in-markdown/">https://www.theurbanist.com.au/2018/02/writing-a-thesis-in-markdown/</a></p>
+<p><a href="https://github.com/hadim/phd_thesis">https://github.com/hadim/phd_thesis</a></p>
+<p><a href="https://vawe42.gitlab.io/post/2018-08-24-thesis-setup/">https://vawe42.gitlab.io/post/2018-08-24-thesis-setup/</a></p>
+<p><a href="https://medium.com/@krzysztofczarnecki/i-wrote-my-thesis-in-markdown-heres-how-it-went-3f60140dfe65">https://medium.com/@krzysztofczarnecki/i-wrote-my-thesis-in-markdown-heres-how-it-went-3f60140dfe65</a></p>
+<p><a href="https://tex.stackexchange.com/questions/418962/markdown-vs-latex-for-thesis">https://tex.stackexchange.com/questions/418962/markdown-vs-latex-for-thesis</a></p>
+<p><a href="https://bartschat.github.io/post/thesis_workflow/">https://bartschat.github.io/post/thesis_workflow/</a></p>
+<p><a href="http://lazappi.id.au/2015/09/my-markdown-thesis/">http://lazappi.id.au/2015/09/my-markdown-thesis/</a></p>
+<p><a href="https://zenodo.org/record/58490#.XNU6ao4za70">https://zenodo.org/record/58490#.XNU6ao4za70</a></p>
+<p><a href="https://tex.stackexchange.com/questions/290617/markdown-mathjax-pdf">https://tex.stackexchange.com/questions/290617/markdown-mathjax-pdf</a></p>
+<p><a href="https://gist.github.com/maxogden/97190db73ac19fc6c1d9beee1a6e4fc8">https://gist.github.com/maxogden/97190db73ac19fc6c1d9beee1a6e4fc8</a></p>
+<p>以下為 mathjax 方程式測試用:</p>
+<p>$$f(x)=x^2$$</p><h2>專案口頭簡報</h2>
 <p>各組利用倉儲中的 Reveal.js 進行結案簡報 (結案口頭簡報)</p>
 <h2>專案報告書</h2>
 <p>各組完成 html 與 pdf 格式之手足球專案結案報告 (文字結案報告書)</p>

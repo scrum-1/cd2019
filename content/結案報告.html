@@ -65,7 +65,7 @@
 <link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
 <script type="text/javascript">SyntaxHighlighter.all();</script>
 
-<!-- for LaTeX equations 暫時不用
+<!-- for LaTeX equations -->
 <script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 <script type="text/javascript">
 init_mathjax = function() {
@@ -86,7 +86,6 @@ init_mathjax = function() {
 }
 init_mathjax();
 </script>
--->
 <!-- 暫時不用
 <script src="./../static/fengari-web.js"></script>
 <script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
@@ -148,7 +147,24 @@ init_mathjax();
           
         </header>
     <div id="tipue_search_content">系統功能展示 << <a href='系統功能展示.html'>Previous</a> <a href='專案口頭簡報.html'>Next</a> >> 專案口頭簡報<br /><h1>結案報告</h1>
-<br />系統功能展示 << <a href='系統功能展示.html'>Previous</a> <a href='專案口頭簡報.html'>Next</a> >> 專案口頭簡報</div>
+<p>假如希望利用 CMSimfly 中既有的 config/content.htm 或 content 目錄中的檔案, 整理出 pdf 格式的報告, 可以使用 Pandoc 與  TinyTeX 設法以程式方法進行轉檔.</p>
+<p>構想:</p>
+<p>假如能夠將 content.htm 先轉為 content.md, 然後就 content.md 中可能出現的內容進行協同轉檔編輯測試, 找出各種資料在轉檔過程中可能碰到的問題, 並加以解決後, 將可以使用類似</p>
+<p><a href="https://github.com/matlipson/phd_thesis_markdown">https://github.com/matlipson/phd_thesis_markdown</a></p>
+<p>的流程, 產生最終 pdf 格式的結案報告.</p>
+<h4>參考資料:</h4>
+<p><a href="https://www.theurbanist.com.au/2018/02/writing-a-thesis-in-markdown/">https://www.theurbanist.com.au/2018/02/writing-a-thesis-in-markdown/</a></p>
+<p><a href="https://github.com/hadim/phd_thesis">https://github.com/hadim/phd_thesis</a></p>
+<p><a href="https://vawe42.gitlab.io/post/2018-08-24-thesis-setup/">https://vawe42.gitlab.io/post/2018-08-24-thesis-setup/</a></p>
+<p><a href="https://medium.com/@krzysztofczarnecki/i-wrote-my-thesis-in-markdown-heres-how-it-went-3f60140dfe65">https://medium.com/@krzysztofczarnecki/i-wrote-my-thesis-in-markdown-heres-how-it-went-3f60140dfe65</a></p>
+<p><a href="https://tex.stackexchange.com/questions/418962/markdown-vs-latex-for-thesis">https://tex.stackexchange.com/questions/418962/markdown-vs-latex-for-thesis</a></p>
+<p><a href="https://bartschat.github.io/post/thesis_workflow/">https://bartschat.github.io/post/thesis_workflow/</a></p>
+<p><a href="http://lazappi.id.au/2015/09/my-markdown-thesis/">http://lazappi.id.au/2015/09/my-markdown-thesis/</a></p>
+<p><a href="https://zenodo.org/record/58490#.XNU6ao4za70">https://zenodo.org/record/58490#.XNU6ao4za70</a></p>
+<p><a href="https://tex.stackexchange.com/questions/290617/markdown-mathjax-pdf">https://tex.stackexchange.com/questions/290617/markdown-mathjax-pdf</a></p>
+<p><a href="https://gist.github.com/maxogden/97190db73ac19fc6c1d9beee1a6e4fc8">https://gist.github.com/maxogden/97190db73ac19fc6c1d9beee1a6e4fc8</a></p>
+<p>以下為 mathjax 方程式測試用:</p>
+<p>$$f(x)=x^2$$</p><br />系統功能展示 << <a href='系統功能展示.html'>Previous</a> <a href='專案口頭簡報.html'>Next</a> >> 專案口頭簡報</div>
         
     <!-- footer -->
       <div class="container">
