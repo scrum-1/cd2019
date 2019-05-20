@@ -170,7 +170,7 @@ with open('config/content.htm', 'w', encoding="utf-8") as f:
 <p><a href="https://pandoc.org/">https://pandoc.org/</a> 可以將 html 格式檔案轉為 Markdown</p>
 <p><a href="https://yihui.name/tinytex/">https://yihui.name/tinytex/</a> 則可以將 Markdown 轉為 pdf 格式檔案</p>
 <p>「假如」使用者可以將上述兩種工具導入可攜程式環境, 將可先設法將 config/content.htm 轉為 Markdown 檔案後, 再設法以協同模式編輯此一 Markdown 檔案, 以 Pandoc 及 TinyTex 將協同專案報告內容轉為一本 pdf 檔案格式的結案書.</p>
-<h3>Pandoc</h3>
+<p><a href="https://drive.google.com/open?id=1QAvznDroNgmUJ-m1cUJTJLo2LnmWJrLF">tinytex and pandoc.7z</a></p><h3>Pandoc</h3>
 <p><a href="https://pandoc.org/">https://pandoc.org/</a></p>
 <p>使用</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">pandoc content.htm  --toc -t latex -V "CJKmainfont:SimSun" -V fontsize=12pt -V geometry:margin=1in --pdf-engine=xelatex -o content.pdf</pre>
